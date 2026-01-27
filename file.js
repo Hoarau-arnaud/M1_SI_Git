@@ -2,7 +2,9 @@ console.log("Hello, world!");
 
 const operand = 12;
 const operand2 = 45;
-
+let result = 2;
+let a = 4;
+let b = 0;
 b += a;
 console.log("resultat de a + b = " + b);
 
@@ -52,3 +54,17 @@ switch (new Date().getDay()) {
     day = "Samedi";
 }
 console.log("Aujourd'hui nous sommes " + day);
+
+
+// NOUVEAU
+
+function generatePassword(length = 12) {
+  const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
+  let pass = "";
+  for (let i = 0; i < length; i++) {
+    pass += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return pass;
+}
+
+console.log(generatePassword(16));
