@@ -59,7 +59,7 @@ console.log("Aujourd'hui nous sommes " + day);
 // NOUVEAU
 
 function generatePassword(length = 12) {
-  const chars = "PWD-abcdefxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
+  const chars = "777777777777CDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
   let pass = "";
   for (let i = 0; i < length; i++) {
     pass += chars[Math.floor(Math.random() * chars.length)];
