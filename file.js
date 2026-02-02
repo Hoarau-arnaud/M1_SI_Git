@@ -68,3 +68,8 @@ function generatePassword(length = 12) {
 }
 
 console.log(generatePassword(16));
+
+z = 5;
+y = 10;
+x = z + y;
+console.log("La valeur de x est : " + x);
